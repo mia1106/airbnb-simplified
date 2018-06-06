@@ -1,0 +1,65 @@
+/*清除原有padding&margin*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/*控制与清除浮动*/
+.float-left-ml{
+  float:left;
+}
+.float-right-ml{
+  float:right;
+}
+.clearfix-ml::after{
+  clear:both;
+  content:'';
+  display:block;
+}
+
+/*控制响应式*/
+@media(min-width:1181px){
+  .l-ml{
+    display:block;
+  }
+  .hidden-l-ml{
+    display:none;
+  }
+}
+
+@media(min-width:441px) and (max-width:1180px){
+  .m-ml{
+    display:block;
+  }
+  .hidden-m-ml{
+    display:none;
+  }
+}
+
+@media(max-width:440px){
+  .s-ml{
+    display:block;
+  }
+  .hidden-s-ml{
+    display:none;
+  }
+}
+
+/*常用样式*/
+.btn-ml{
+  border:1px solid #ddd;
+  width:68px;
+  height:48px;
+  border-radius:5px;
+}
+
+input{
+  border:1px solid #ccc;
+  padding:7px;
+  border-radius:5px;
+}
+input:focus{
+  border-color:#ddd;
+  outline:0;
+}

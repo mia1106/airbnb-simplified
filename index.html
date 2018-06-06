@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>爱彼迎airbnb</title>
+  <link rel="stylesheet" href="css/general-mia.css"/>
+  <link rel="stylesheet" href="css/airbnb.css"/>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <!-- logo-->
+      <a href="#" class="logo float-left-ml">
+        <img src="images/logo.png" alt="s"/>
+      </a>
+      <!-- 其它-->
+      <!-- pc-->
+      <div class="other-text float-right-ml hidden-m-ml hidden-s-ml">
+        <span>登录</span>
+        <span>注册</span>
+      </div>
+      <!-- mobile+pad-->
+      <div class="float-left-ml hidden-l-ml arrow">
+        <a href="#"><i>箭头xxx</i></a>
+      </div>
+    </div>
+    <router-view></router-view>
+  </div>
+  <!-- homepage-->
+  <template id="home">
+    <section class="home">
+      <nav class="ads-search">
+        <div class="title">Airbnb爱彼迎</div>
+        <div class="ads">全球450万民宿任你挑</div>
+        <div class="search-box">
+          <div class="content">
+            <input type="text"/>
+            <div class="float-right-ml btn-ml search-btn">搜索</div>
+          </div>
+        </div>
+      </nav>
+      <nav class="recent-explore">最近浏览</nav>
+      <div class="airbnb-block">搜索爱彼迎</div>
+      <div class="hot-places">热门目的地</div>
+      <div class="theme-houses">旅游主题热门房源</div>
+    </section>
+  </template>
+  <!-- listing page-->
+  <template id="list">
+    <section>
+      list
+    </section>
+  </template>
+  <!-- detail page-->
+  <template id="detail">
+    <section>
+      detail
+    </section>
+  </template>
+<script src="js/vue.js"></script>
+<script src="js/vue-resource.min.js"></script>
+<script src="js/vue-router.min.js"></script>
+<script src="js/airbnb.js"></script>
+</body>
+</html>
